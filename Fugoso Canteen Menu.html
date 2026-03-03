@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fugoso Canteen Ordering System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- WELCOME SCREEN -->
+<div id="welcomeScreen" class="welcome-screen">
+    <div class="welcome-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Welcome to Fugoso Canteen</h1>
+        <input type="text" id="fullName" placeholder="Enter your Full Name">
+        <input type="text" id="lrn" placeholder="Enter your LRN">
+        <button id="startOrderBtn">Start Order</button>
+        <p>Your ID must be presented to the counter.</p>
+    </div>
+</div>
+
+<!-- MAIN SYSTEM -->
+<div class="main-container" id="mainContainer" style="display:none;">
+
+    <!-- LEFT PANEL: Categories -->
+    <div class="left-panel">
+        <h2>Categories</h2>
+        <button class="category-btn" data-category="meal">Meal</button>
+        <button class="category-btn" data-category="rice">Rice</button>
+        <button class="category-btn" data-category="snacks">Snacks</button>
+        <button class="category-btn" data-category="drinks">Drinks</button>
+
+        <button id="backToWelcomeBtn" class="btn back-btn">Back</button>
+    </div>
+
+    <!-- MIDDLE PANEL: Products & Options -->
+    <div class="middle-panel">
+        <h2 id="productTitle">Select a Category</h2>
+        <div id="productList" class="products"></div>
+        <div id="optionsContainer" class="options"></div>
+        <div class="quantity-control">
+            <button id="minusQty">-</button>
+            <span id="qty">1</span>
+            <button id="plusQty">+</button>
+        </div>
+        <button class="btn" id="addCartBtn">Add to Cart</button>
+    </div>
+
+    <!-- RIGHT PANEL: Cart -->
+    <div class="cart-panel">
+        <h2>Cart</h2>
+        <div id="cartList"></div>
+        <div class="total" id="totalAmount">Total: ₱0</div>
+        <button id="printBtn" class="btn">Print Order</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
