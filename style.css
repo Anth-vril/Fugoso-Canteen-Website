@@ -59,7 +59,7 @@ body {
 }
 .category-btn:hover { background: #2e7d32; }
 .back-btn { margin-top: auto; padding: 16px; border: none; border-radius: 5px; background: #66bb6a; color: white; cursor: pointer; font-weight: bold; font-size: 1em; }
-.back-btn:hover { background: #66bb6a; }
+.back-btn:hover { background: #2e7d32; }
 
 /* middle panel */
 .middle-panel {
@@ -134,7 +134,7 @@ body {
 .item-line button { background:#66bb6a; color:white; border:none; padding:3px 6px; cursor:pointer; border-radius:3px; font-size:0.9em;}
 .total { font-weight:bold; margin-bottom:5px; font-size:1.1em; }
 #printBtn { padding:10px 20px; border:none; border-radius:5px; cursor:pointer; background:#66bb6a; color:white; font-size:1em;}
-#printBtn:hover { background: #1b5e20; }
+#printBtn:hover { background: #2e7d32; }
 
 /* MOBILE ONLY */
 @media (max-width: 768px) {
@@ -216,4 +216,5 @@ body {
     #printBtn { width: 95%; max-width: 100%; padding: 2vh 2vw; font-size: 4vw; border-radius: 1vw; }
     #backBtn, .back-btn { padding: 8px 14px; font-size: 4vw; border-radius: 1vw; }
     #backBtn:hover { background: #1b5e20; }
+
 }
